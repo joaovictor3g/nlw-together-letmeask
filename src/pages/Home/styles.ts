@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: stretch;
-  height: 100vh;
+  height: 100%;
 
   aside {
     flex: 7;
@@ -126,6 +126,31 @@ export const Container = styled.div`
       height: 1px;
       background: ${props => props.theme.colors.separatorAfter};
       margin-left: 1.6rem;
+    }
+  }
+
+
+  @media(max-width: 850px) {
+    flex-direction: column;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+
+    aside {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      strong {
+        margin-top: 0;
+        font-size: 2.6rem;
+      }
+      
+    }
+
+    .main-content {
+      margin-top: 3.6rem;
     }
   }
 `;
