@@ -7,6 +7,22 @@ declare  module 'styled-components' {
     colors: {
       background: string;
       text: string;
+
+      asideBackground: string;
+      asideColor: string;
+      strongColor: string;
+      formInputBg: string;
+      formInputBorder: string;
+
+      createRoomBackground: string;
+      createRoomColor: string;
+
+      separatorColor: string;
+      separatorBefore: string;
+      separatorAfter: string;
+
+      pColor: string,
+    aColor: string,
     },  
   }
 }

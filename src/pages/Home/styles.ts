@@ -8,8 +8,8 @@ export const Container = styled.div`
   aside {
     flex: 7;
 
-    background: #835afd;
-    color: #FFF;
+    background: ${props => props.theme.colors.asideBackground};
+    color: ${props => props.theme.colors.asideColor};
 
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ export const Container = styled.div`
       font: 700 3.6rem "Poppins", sans-serif;
       line-height: 4.2rem;
       margin-top: 1.6rem;
-      color: #f0f0f0;
+      color: ${props => props.theme.colors.strongColor};
     }
 
     p {
@@ -63,8 +63,8 @@ export const Container = styled.div`
         height: 5rem;
         border-radius: 8px;
         padding: 0 1.6rem;
-        background: #FFF;
-        border: 1px solid #a8a8b3;
+        background: ${props => props.theme.colors.formInputBg};
+        border: 1px solid ${props => props.theme.colors.formInputBorder};
       }
 
       button {
@@ -82,9 +82,9 @@ export const Container = styled.div`
     height: 5rem;
     border-radius: 8px;
     font-weight: 500;
-    background: #ea4335;
+    background: ${props => props.theme.colors.createRoomBackground};
 
-    color: #FFF;
+    color: ${props => props.theme.colors.createRoomColor};
     
     display: flex;
     justify-content: center;
@@ -106,7 +106,7 @@ export const Container = styled.div`
 
   .separator {
     font-size: 1.4rem;
-    color: #a8a8b3;
+    color: ${props => props.theme.colors.separatorColor};
 
     margin: 3.2rem 0;
     display: flex;
@@ -116,7 +116,7 @@ export const Container = styled.div`
       content: '';
       flex: 1;
       height: 1px;
-      background: #a8a8b3;
+      background: ${props => props.theme.colors.separatorBefore};
       margin-right: 1.6rem;
     }
 
@@ -124,7 +124,7 @@ export const Container = styled.div`
       content: '';
       flex: 1;
       height: 1px;
-      background: #a8a8b3;
+      background: ${props => props.theme.colors.separatorAfter};
       margin-left: 1.6rem;
     }
   }

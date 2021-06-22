@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useTheme } from 'styled-components';
 import Switch from "react-switch";
 import { Container } from "./styles";
 
@@ -8,13 +8,15 @@ interface ISwitcher {
 }
 
 export function Switcher({ onChange, checked }: ISwitcher) {
+  const theme = useTheme();
+
   return (
     <Container>
       <Switch 
         onChange={onChange}
         checked={checked}
-        onColor="#86d3ff"
-        onHandleColor="#2693e6"
+        onColor={theme.title==='light' ? "#86d3ff" : '#171923'}
+        onHandleColor={theme.title==='light' ? "#2693e6" : '#2D3748'}
         handleDiameter={20}
         uncheckedIcon={false}
         checkedIcon={false}
