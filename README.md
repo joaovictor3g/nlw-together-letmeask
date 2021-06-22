@@ -46,4 +46,6 @@ git commit -m 'feat: My new feature'
 git push origin my-feature
 ```
 
+See [MIT License](LICENSE)
+
 
