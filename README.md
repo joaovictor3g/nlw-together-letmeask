@@ -20,19 +20,16 @@ This application is authored with google using firebase.
 ## 🛠️ How running?
 ```bash
 #clone this repo
-git clone https://github.com/joaovictor3g/nlw5-podcastr.git
+git clone https://github.com/joaovictor3g/nlw-together-letmeask.git
 
 #access path
-cd nlw5-podcastr
+cd nlw-together-letmeask
 
 #install all dependencies
 yarn
 
-#run fake api
-yarn server
-
 #run 
-yarn dev
+yarn start
 ```
 
 ## How contributing?
