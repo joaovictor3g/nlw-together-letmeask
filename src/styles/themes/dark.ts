@@ -3,7 +3,7 @@ export default {
 
   colors: {
     background: '#2D3748',
-    text: '#000',
+    text: '#FFF',
 
     asideBackground: '#322659',
     asideColor: '#FFF',
@@ -20,5 +20,6 @@ export default {
 
     pColor: '#FFF',
     aColor: '#D53F8C',
+    questionBoxBg: '#4A5568',
   }
 }

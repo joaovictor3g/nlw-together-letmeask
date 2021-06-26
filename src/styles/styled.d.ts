@@ -22,7 +22,9 @@ declare  module 'styled-components' {
       separatorAfter: string;
 
       pColor: string,
-    aColor: string,
+      aColor: string,
+
+      questionBoxBg: string;
     },  
   }
 }

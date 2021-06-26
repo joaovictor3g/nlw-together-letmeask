@@ -5,7 +5,7 @@ export const Button = styled.div`
   border-radius: 8px;
   overflow: hidden;
 
-  background-color: #FFF;
+  background-color: ${props => props.theme.colors.background};
   border: 1px solid #835afd;
   cursor: pointer;
 
@@ -14,7 +14,7 @@ export const Button = styled.div`
   div {
     height: 100%;
     width: 20%;
-    background: #835afd;
+    background: ${props => props.theme.colors.asideBackground};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,5 +28,6 @@ export const Button = styled.div`
     width: max-content;
     font-size: 1.4rem;
     font-weight: 500;
+    color: ${props => props.theme.colors.text};
   }
 `;

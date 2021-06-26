@@ -21,8 +21,7 @@ function App() {
       <AuthProvider>
         <GlobalStyle />
         <Switcher 
-          onChange={toggleTheme}
-          checked={theme.title==='dark'}  
+          onClick={toggleTheme}
         />
         <Routes />
       </AuthProvider>

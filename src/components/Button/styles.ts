@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const StyledButton = styled.button`
+interface StyledButtonProps {
+  isOutlined?: boolean;
+}
+
+export const StyledButton = styled.button<StyledButtonProps>`
   height: 5rem;
   border-radius: 8px;
   font-weight: 500;
@@ -21,6 +25,12 @@ export const StyledButton = styled.button`
   img {
     margin-right: .8rem;
   }
+
+  ${props => props.isOutlined && css`
+    background:${props => props.theme.colors.background};;
+    border: 1px solid #8351fd;
+    color: ${props => props.theme.colors.text};
+  `}
 
   &:not(:disabled):hover {
     filter: brightness(0.9);

@@ -16,6 +16,15 @@ export const Container = styled.div`
       & > img {
         max-height: 45px;
       }
+
+      & > div {
+        display: flex;
+        gap: 10px;
+
+        button {
+          height: 40px;
+        }
+      }
     }
   }
 
