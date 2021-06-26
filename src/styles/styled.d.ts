@@ -25,6 +25,8 @@ declare  module 'styled-components' {
       aColor: string,
 
       questionBoxBg: string;
+      highlighted: string;
+      answered: string;
     },  
   }
 }

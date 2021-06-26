@@ -29,7 +29,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   ${props => props.isOutlined && css`
     background:${props => props.theme.colors.background};;
     border: 1px solid #8351fd;
-    color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.title==='light' ? '#8351fd' : '#FFF'};
   `}
 
   &:not(:disabled):hover {

@@ -22,5 +22,7 @@ export default {
     aColor: '#e559f9',
 
     questionBoxBg: '#ffff',
+    highlighted: '#f4f0ff',
+    answered: '#dbdcdd',
   }
 }

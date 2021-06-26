@@ -21,5 +21,7 @@ export default {
     pColor: '#FFF',
     aColor: '#D53F8C',
     questionBoxBg: '#4A5568',
+    highlighted: '#718096',
+    answered: '#1A202C',
   }
 }

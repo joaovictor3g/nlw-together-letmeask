@@ -12,6 +12,16 @@ export const Container = styled.div`
     color: ${props => props.theme.colors.text};
   }
 
+  &.highlighted {
+    background: ${props => props.theme.colors.highlighted};
+    border: 1px solid #835afd;
+  }
+
+  &.answered {
+    background: ${props => props.theme.colors.answered};
+  }
+
+
   footer {
     display: flex;
     justify-content: space-between;
@@ -33,6 +43,11 @@ export const Container = styled.div`
         color: ${props => props.theme.colors.text};
         font-size: 1.4rem;
       }
+    }
+
+    & > div {
+      display: flex;
+      gap: 10px;
     }
 
     button {
