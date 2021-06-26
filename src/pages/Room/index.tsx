@@ -1,11 +1,10 @@
 import toast, { Toaster } from 'react-hot-toast'
 import { Container } from "./styles";
 
-
 import { Button } from "../../components/Button";
 import { RoomCode } from "../../components/RoomCode";
 import { useParams } from "react-router";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { useAuthContext } from "../../contexts/AuthContext";
 import { database } from '../../services/firebase';
 

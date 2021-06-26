@@ -47,9 +47,6 @@ export function AuthProvider(props: IAuthProvider) {
       }
   }, []);
 
-  function handleUnsignIn() {
-    setIsSigned(false);
-  }
 
   async function handleSignIn() {
     const provider = new firebase.auth.GoogleAuthProvider();

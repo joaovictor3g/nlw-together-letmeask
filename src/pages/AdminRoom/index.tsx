@@ -5,8 +5,6 @@ import { Container } from "./styles";
 import { Button } from "../../components/Button";
 import { RoomCode } from "../../components/RoomCode";
 import { useHistory, useParams } from "react-router";
-import { useState } from "react";
-import { useAuthContext } from "../../contexts/AuthContext";
 import { database } from '../../services/firebase';
 
 import logoImg from '../../assets/logo.svg';
@@ -24,7 +22,6 @@ type RoomParams = {
 }
 
 export function AdminRoom() {
-  const { user } = useAuthContext();
   const params = useParams<RoomParams>();
   const history = useHistory();
   

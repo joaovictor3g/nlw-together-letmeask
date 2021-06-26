@@ -1,5 +1,4 @@
 import { useTheme } from 'styled-components';
-import Switch from "react-switch";
 import { WiMoonAltThirdQuarter } from 'react-icons/wi';
 import { Container } from "./styles";
 
