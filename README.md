@@ -8,7 +8,7 @@
 </div>
 
 # Project 
-This application is authored with google using firebase.
+This application uses authentication with google using firebase.
 
 ## 🚀 Techs
 - [React](https://pt-br.reactjs.org/)
