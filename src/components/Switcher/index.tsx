@@ -1,5 +1,6 @@
 import { useTheme } from 'styled-components';
-import { WiMoonAltThirdQuarter } from 'react-icons/wi';
+import { FaMoon } from 'react-icons/fa';
+import { FiSun } from 'react-icons/fi'
 import { Container } from "./styles";
 
 interface ISwitcher {
@@ -12,10 +13,11 @@ export function Switcher({ onClick }: ISwitcher) {
   return (
     <Container title={theme.title==='dark' ? 'Mudar para modo light' : 'Mudar para modo dark'}>
       <button onClick={onClick}>
-        <WiMoonAltThirdQuarter 
-          size={30} 
-          color={theme.title==='dark' ? '#FFF' : '#000'}
-        />
+       {theme.title==='light' ? (
+         <FiSun size={24} color="#FFF"/>
+       ) : (
+          <FaMoon size={24} color="#171923"/>
+       )}
       </button>
     </Container>
   )
